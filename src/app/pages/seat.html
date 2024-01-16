@@ -1,11 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Выбор зон в маршруте</title>
+  <link rel="stylesheet" href="../../../style.css">
+  <link rel="stylesheet" href="../../assets/styles/reset.css">
+  <link rel="stylesheet" href="../../assets/styles/seat.css">
+  <title>Выбор локаций</title>
 </head>
+
 <body>
-  
+  <div>
+    <div class="select-locations__wrapper">
+      <div class="app__header content__container">
+        <div class="header-content__block">
+          <div class="header-logo__container">
+            <img class="header-logo__image" src="../../assets/images/logo.png" title="Logo">
+          </div>
+          <div class="header-nav__container">
+            <nav class="nav__menu">
+              <a class="nav__link" href="#promotions" onclick="scrollToElement()">Акции</a>
+              <a class="nav__link" href="#">Поиск</a>
+              <a class="nav__link" href="./src/app/pages/booking.html">Управление бронированием</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      <h2>Выбор зон</h2>
+      <div class="route__container">
+        <div class="route-content__block">
+          <div class="route-content__header">
+            <h2>Озеро с горами и лесом</h2>
+          </div>
+
+          <div class="route-image__container">
+            <img class="route-content__image" src="../../assets/images/photo_6.jpg"
+              onclick="location.href='./seat.html'" />
+          </div>
+
+          <div class="route-description__container">
+            <h3>Список локаций</h3>
+            <ul class="select-locations__list">
+
+              <div class="location__container">
+                <div class="location__header">Гора</div>
+                <div class="location__content">
+                  <img class="location-content__image" src="../../assets/images/photo_14.jpg"/>
+                  <div class="location-content__description">Какой-то мужик на горе. АХАХАХА</div>
+                </div>
+                <div class="location__booking">
+                  <button class="button" onclick="location.href='./booking.html'">Забронировать</button>
+                </div>
+              </div>
+
+              <div class="location__container">
+                <div class="location__header">Палатка в поле</div>
+                <div class="location__content">
+                  <img class="location-content__image" src="../../assets/images/photo_15.jpg"/>
+                  <div class="location-content__description">Палатка в поле</div>
+                </div>
+                <div class="location__booking">
+                  <button class="button" onclick="location.href='./booking.html'">Забронировать</button>
+                </div>
+              </div>
+
+              <div class="location__container">
+                <div class="location__header">Дом в лесу</div>
+                <div class="location__content">
+                  <img class="location-content__image" src="../../assets/images/photo_12.jpg"/>
+                  <div class="location-content__description">Дом в лесу</div>
+                </div>
+                <div class="location__booking">
+                  <button class="button" onclick="location.href='./booking.html'">Забронировать</button>
+                </div>
+              </div>
+
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <div class="app__footer">
+      <div class="footer-content__container content__container">
+        <div class="container__info">
+          <span>Телефон “8 (800) 555-33-10”</span>
+          <span>Акции: <a href="#promotions">http://xxxxxx-m1.wsr.ru/#promotions</a></span>
+          <span>Поиск: <a href="./src/app/pages/searched-routes.html">http://xxxxxx-m1.wsr.ru/#search</a></span>
+        </div>
+
+        <div class="container__info">
+          <span>О нас: <a href="http://xxxxxx-m1.wsr.ru/#about">http://xxxxxx-m1.wsr.ru/#about</a></span>
+          <span>Контакты: <a href="http://xxxxxx-m1.wsr.ru/contacts">http://xxxxxx-m1.wsr.ru/contacts</a></span>
+          <span>Пользовательское соглашение: <a
+              href="http://xxxxxx-m1.wsr.ru/terms-and-conditions">http://xxxxxx-m1.wsr.ru/terms-and-conditions</a></span>
+        </div>
+      </div>
+    </div>
+
+  </div>
 </body>
+
 </html>

@@ -1,11 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../../style.css">
+  <link rel="stylesheet" href="../../assets/styles/reset.css">
+  <link rel="stylesheet" href="../../assets/styles/searched-routes.css">
   <title>Найденные маршруты</title>
 </head>
+
 <body>
-  
+  <div class="searched-routes__wrapper">
+    <div class="app__header content__container">
+      <div class="header-content__block">
+        <div class="header-logo__container">
+          <img class="header-logo__image" src="../../assets/images/logo.png" title="Logo">
+        </div>
+        <div class="header-nav__container">
+          <nav class="nav__menu">
+            <a class="nav__link" href="#promotions" onclick="scrollToElement()">Акции</a>
+            <a class="nav__link" href="#">Поиск</a>
+            <a class="nav__link" href="./src/app/pages/booking.html">Управление бронированием</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <ul class="searched-routes__list">
+      <h2>Результаты поиска</h2>
+      <div class="searched-route__container">
+        <div class="route-content__block">
+          <div style="display: flex; gap: 1rem;">
+            <div class="col route-image__container">
+              <img class="route_content__image" src="../../assets/images/photo_3.jpg"
+                onclick="location.href='./seat.html'" />
+            </div>
+            <div class="col route-description__container">
+              <span class="route_content__item">Алтайский край</span>
+              <span class="route_content__item">Прогулка по пляжу</span>
+              <span class="route_content__item">Сложность маршрта: средняя</span>
+              <span class="route_content__item">Кол-во интересных зон: 5 зон</span>
+            </div>
+          </div>
+          <div class="col route-actions__container">
+            <button class="button" onclick="location.href='./seat.html'">Подробнее</button>
+            <span class="route_content__item">Предполагаемые даты похода:</span>
+            <span class="route_content__item">10.01.2024 - 12.01.2024</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="searched-route__container">
+        <div class="route-content__block">
+          <div style="display: flex; gap: 1rem;">
+            <div class="col route-image__container">
+              <img class="route_content__image" src="../../assets/images/photo_4.jpg"
+                onclick="location.href='./seat.html'" />
+            </div>
+            <div class="col route-description__container">
+              <span class="route_content__item">Алтайский край</span>
+              <span class="route_content__item">Маршрут 2</span>
+              <span class="route_content__item">Сложность маршрта: средняя</span>
+              <span class="route_content__item">Кол-во интересных зон: 2 зон</span>
+            </div>
+          </div>
+          <div class="col route-actions__container">
+            <button class="button" onclick="location.href='./seat.html'">Подробнее</button>
+            <span class="route_content__item">Предполагаемые даты похода:</span>
+            <span class="route_content__item">10.01.2024 - 12.01.2024</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="searched-route__container">
+        <div class="route-content__block">
+          <div style="display: flex; gap: 1rem;">
+            <div class="col route-image__container">
+              <img class="route_content__image" src="../../assets/images/photo_5.jpg"
+                onclick="location.href='./seat.html'" />
+            </div>
+            <div class="col route-description__container">
+              <span class="route_content__item">Тридевятое царство</span>
+              <span class="route_content__item">Поход в замок</span>
+              <span class="route_content__item">Сложность маршрта: средняя</span>
+              <span class="route_content__item">Кол-во интересных зон: 5 зон</span>
+            </div>
+          </div>
+          <div class="col route-actions__container">
+            <button class="button" onclick="location.href='./seat.html'">Подробнее</button>
+            <span class="route_content__item">Предполагаемые даты похода:</span>
+            <span class="route_content__item">10.01.2024 - 12.01.2024</span>
+          </div>
+        </div>
+      </div>
+
+    </ul>
+    
+  </div>
+  <div class="app__footer">
+    <div class="footer-content__container content__container">
+      <div class="container__info">
+        <span>Телефон “8 (800) 555-33-10”</span>
+        <span>Акции: <a href="#promotions">http://xxxxxx-m1.wsr.ru/#promotions</a></span>
+        <span>Поиск: <a href="./src/app/pages/searched-routes.html">http://xxxxxx-m1.wsr.ru/#search</a></span>
+      </div>
+     
+      <div class="container__info">
+        <span>О нас: <a href="http://xxxxxx-m1.wsr.ru/#about">http://xxxxxx-m1.wsr.ru/#about</a></span>
+        <span>Контакты: <a href="http://xxxxxx-m1.wsr.ru/contacts">http://xxxxxx-m1.wsr.ru/contacts</a></span>
+        <span>Пользовательское соглашение: <a href="http://xxxxxx-m1.wsr.ru/terms-and-conditions">http://xxxxxx-m1.wsr.ru/terms-and-conditions</a></span>
+      </div>
+    </div>
+  </div>
 </body>
+
 </html>

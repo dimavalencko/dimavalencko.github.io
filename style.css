@@ -1,4 +1,6 @@
 #app {
+  display: flex;
+  flex-direction: column;
   width: 100vw;
   height: 100vh;
   background-color: #dfdfdf;
@@ -255,6 +257,12 @@
   border-radius: 0.5rem;
   padding: 0.5rem;
   width: 10rem;
+}
+.button:hover {
+  background-color: #d7d7d7;
+}
+.button:active {
+  background-color: #bbbbbb;
 }
 
 .promotions-list__container {

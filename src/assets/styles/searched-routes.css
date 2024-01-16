@@ -1,0 +1,90 @@
+.searched-routes__wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1rem;
+  width: 100vw;
+  height: 100%;
+}
+
+.searched-routes__list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  gap: 1.5rem;
+}
+
+.searched-route__container {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  padding: 1rem;
+  border: 1px #ccc solid;
+  background-color: rgb(250, 250, 250);
+  border-radius: 1rem;
+  flex-grow: 1;
+  flex-shrink: 1;
+  min-width: 240px;
+  width: 100%;
+}
+
+.route-content__block {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 1rem;
+}
+
+.col {
+  gap: 1rem;
+}
+
+.route-image__container { 
+  position: relative;
+  max-width: 30rem;
+  max-height: 10rem;
+  min-width: 30rem;
+  min-height: 10rem;
+}
+
+.route_content__image {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+  object-fit: cover;
+}
+
+.route-image__container::after {
+  content: 'Подробнее';
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s;
+  border-radius: 0.5rem;
+  -webkit-transition: all 0.3s;
+  background-color: black;
+  opacity: 0;
+  color: #ccc;
+  width: 100%;
+  height: 100%;
+}
+
+.route-image__container:hover::after {
+  opacity: 0.8;
+}
+
+.route-description__container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.route_content__item {
+}
+.route-actions__container {
+  display: flex;
+  flex-direction: column;
+}

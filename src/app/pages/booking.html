@@ -1,11 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Бронирование</title>
+  <link rel="stylesheet" href="../../../style.css">
+  <link rel="stylesheet" href="../../assets/styles/reset.css">
+  <link rel="stylesheet" href="../../assets/styles/booking.css">
+  <title>Выбор локаций</title>
 </head>
+
 <body>
-  
+  <div>
+    <div class="booking-route__wrapper">
+      <div class="app__header content__container">
+        <div class="header-content__block">
+          <div class="header-logo__container">
+            <img class="header-logo__image" src="../../assets/images/logo.png" title="Logo">
+          </div>
+          <div class="header-nav__container">
+            <nav class="nav__menu">
+              <a class="nav__link" href="#promotions" onclick="scrollToElement()">Акции</a>
+              <a class="nav__link" href="#">Поиск</a>
+              <a class="nav__link" href="./src/app/pages/booking.html">Управление бронированием</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="booking-route__content">
+        <h2>Офромление бронирования</h2>
+
+        <div class="booking-confirm__container">
+          <div class="booking-config__container">
+
+            <div class="config__item">
+              <label for="peoplesCount">Количество людей</label>
+              <input class="text__input" type="number" name="peoplesCount" min="1" max="32" value="1"/>
+            </div>
+
+            <div class="config__item">
+              <label for="email">Почтовый адрес</label>
+              <input class="text__input" type="text" name="email" placeholder="Введите почтовый адрес" />
+            </div>
+
+            <div class="config__item">
+              <label for="email">Дополнительные услуги:</label>
+              <div class="additional-services__block">
+                <div id="service_explorer" class="additional-service__item" onclick="selectAdditionalService('explorer')">Проводник</div>
+                <div id="service_equipmentRental" class="additional-service__item" onclick="selectAdditionalService('equipmentRental')">Аренда оборудования</div>
+                <div id="service_photograph" class="additional-service__item" onclick="selectAdditionalService('photograph')">Фотограф/Видеооператор</div>
+                <div id="service_insurance" class="additional-service__item" onclick="selectAdditionalService('insurance')">Страхование от несчастных случаев</div>
+              </div>
+            </div>
+
+            <div class="config__item">
+              <label for="email">Дополнительный комментарий</label>
+              <textarea class="text__input" class="additional-comment__textarea"></textarea>
+            </div>
+
+            <div class="config__item">
+              <label>Итоговая стоимость: 5000 руб</label>
+            </div>
+
+            <button class="button" onclick="() => alert('Тур забронирован!'); location.href='../../../index.html'">Оформить</button>
+          </div>
+
+        </div>
+
+        <div class="booking-route-detail__block">
+          <h3>Выбранная локация</h3>
+
+          <div class="selected-location__container">
+            <div class="location-detail-info__block">
+              <span>Горы</span>
+              <span>Регион - Алтайский край</span>
+              <span>Сложность - высокая</span>
+              <img class="location-detail__image" src="../../assets/images/photo_14.jpg" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="app__footer">
+    <div class="footer-content__container content__container">
+      <div class="container__info">
+        <span>Телефон “8 (800) 555-33-10”</span>
+        <span>Акции: <a href="#promotions">http://xxxxxx-m1.wsr.ru/#promotions</a></span>
+        <span>Поиск: <a href="./src/app/pages/searched-routes.html">http://xxxxxx-m1.wsr.ru/#search</a></span>
+      </div>
+
+      <div class="container__info">
+        <span>О нас: <a href="http://xxxxxx-m1.wsr.ru/#about">http://xxxxxx-m1.wsr.ru/#about</a></span>
+        <span>Контакты: <a href="http://xxxxxx-m1.wsr.ru/contacts">http://xxxxxx-m1.wsr.ru/contacts</a></span>
+        <span>Пользовательское соглашение: <a
+            href="http://xxxxxx-m1.wsr.ru/terms-and-conditions">http://xxxxxx-m1.wsr.ru/terms-and-conditions</a></span>
+      </div>
+    </div>
+  </div>
+
+  </div>
+  <script src="../scripts/booking.js" defer></script>
 </body>
+
 </html>

@@ -17,9 +17,9 @@
         </div>
         <div class="header-nav__container">
           <nav class="nav__menu">
-            <a class="nav__link" href="#">Акции</a>
+            <a class="nav__link" href="#promotions" onclick="scrollToElement()">Акции</a>
             <a class="nav__link" href="#">Поиск</a>
-            <a class="nav__link" href="#">Управление бронированием</a>
+            <a class="nav__link" href="./src/app/pages/booking.html">Управление бронированием</a>
           </nav>
         </div>
       </div>
@@ -119,11 +119,11 @@
             <input class="peoples-count__input" type="number" title="Выберите кол-во участников похода" value="1" min="1" max="32"/>
           </div>
 
-          <button class="button" title="Поиск">Поиск</button>
+          <button class="button" title="Поиск" onclick="location.href='./src/app/pages/searched-routes.html'">Поиск</button>
         </div>
       </div>
 
-      <div class="promotions-list__container content__container">
+      <div id="promotions" class="promotions-list__container content__container">
         <h3>Список акций</h3>
         <ul class="promotions-items__list">
           <div class="promotions-items-list__item">
@@ -159,8 +159,8 @@
       <div class="footer-content__container content__container">
         <div class="container__info">
           <span>Телефон “8 (800) 555-33-10”</span>
-          <span>Акции: <a href="http://xxxxxx-m1.wsr.ru/#promotions">http://xxxxxx-m1.wsr.ru/#promotions</a></span>
-          <span>Поиск: <a href="http://xxxxxx-m1.wsr.ru/#search">http://xxxxxx-m1.wsr.ru/#search</a></span>
+          <span>Акции: <a href="#promotions">http://xxxxxx-m1.wsr.ru/#promotions</a></span>
+          <span>Поиск: <a href="./src/app/pages/searched-routes.html">http://xxxxxx-m1.wsr.ru/#search</a></span>
         </div>
        
         <div class="container__info">
@@ -171,6 +171,7 @@
       </div>
     </div>
   </div>
-  <script src="./src/app/scripts/main.js"></script>
+  <script src="./src/app/scripts/main.js" defer></script>
+  <script src="./src/app/scripts/smooth-scroll.js" defer></script>
 </body>
 </html>
