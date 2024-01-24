@@ -3,13 +3,14 @@
   flex-direction: column;
   width: 100vw;
   height: 100vh;
-  background-color: #dfdfdf;
+  background-color: #ffffff;
   overflow-x: hidden;
 }
 
 .content__container {
   max-width: 1280px;
   margin: 0 auto;
+  padding: 0 1rem;
 }
 
 /* Header container */
@@ -148,7 +149,7 @@
   align-items: center;
   justify-content: center;
 
-  border: 1px #ccc solid;
+  border: 1px #ff90f9 solid;
   border-radius: 50%;
 
   min-width: 3rem;
@@ -156,7 +157,7 @@
   font-size: inherit;
 }
 .step-item__title {
-  font-size: inherit;
+  font-size: 24px;
 }
 
 
@@ -213,8 +214,8 @@
   border-radius: 0.5rem;
   min-width: 320px;
   min-height: 240px;
+  height: 368px;
   width: 100%;
-  height: 100%;
 }
 
 
@@ -226,43 +227,43 @@
   justify-content: flex-start;
   align-items: flex-start;
 
-  background-color: #cecece;
   border-radius: 1rem;
 }
 
 .search-form-container__content {
   display: flex;
   flex-direction: column;
-  padding: 2rem;
-  gap: 1rem;
+  /* padding: 2rem; */
+  gap: 1.5rem;
 }
-.content__container {
+.content__container label {
+  font-size: 20px;
 }
 .select-region__container {
 }
 
 .select-region__container, .hiking-date__input, .peoples-count__input, .text__input {
-  font-size: 16px;
-  font-size: max(16px, 1em);
+  font-size: 20px;
   font-family: inherit;
   padding: 0.25em 0.5em;
-  background-color: #e9e9e9;
-  border: 2px solid var(--input-border);
+  border: 1px #ffd4fd solid;
   border-radius: 4px;
 }
 
 .button {
-  background-color: #e9e9e9;
-  border: 1px #757474 solid;
+  border: 1px #ffd4fd solid;
   border-radius: 0.5rem;
   padding: 0.5rem;
   width: 10rem;
+  font-size: 20px;
 }
 .button:hover {
-  background-color: #d7d7d7;
+  color: white;
+  background-color: #ff80f9;
 }
 .button:active {
-  background-color: #bbbbbb;
+  color: white;
+  background-color: #ff67f7;
 }
 
 .promotions-list__container {
@@ -282,8 +283,6 @@
   display: flex;
   flex-direction: column;
   flex-basis: 49%;
-  border-left: 1px #5e5e5e solid;
-  padding-left: 10px;
   justify-content: flex-start;
   align-items: flex-start;
   gap: 0.5rem;
@@ -302,8 +301,6 @@
   align-items: start;
 
   width: 100%;
-  padding: 1rem;
-  border: 1px #5e5e5e solid;
   border-radius: 0.5rem;
 }
 
@@ -317,7 +314,7 @@
   display: flex;
   margin-top: 2rem;
   border-top: 1px #5e5e5e solid;
-  background-color: #ccc;
+  background-color: #ffffff;
 }
 
 .footer-content__container {
