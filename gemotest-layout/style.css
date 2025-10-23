@@ -201,7 +201,8 @@ body {
 
 @media screen and (width < 720px) {
   .main__container {
-    margin: 24px 32px;
+    margin: 24px 0 32px 24px;
+    gap: 32px;
   }
 
 
@@ -233,7 +234,7 @@ body {
     font-size: 12px;
   }
 
-  
+
   .other-services-list {
     font-size: 13px;
   }
@@ -254,6 +255,7 @@ body {
   .promo-services__list {
     width: 100%;
     flex-direction: column;
+    margin-right: 32px;
   }
 
   .promo-service {
