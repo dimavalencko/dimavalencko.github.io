@@ -1,0 +1,275 @@
+body {
+  display: flex;
+  justify-content: center;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0 auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.main__container {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+
+  margin: 40px 48px;
+  max-width: 928px;
+  overflow: hidden;
+}
+
+.med-uslugi {
+  display: flex;
+  flex-direction: column;
+}
+
+.services-promo__container {
+  display: flex;
+}
+
+.med-uslugi__title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 100%;
+  color: #292D3A;
+}
+.med-uslugi__title::before {
+  content: "Медицинские услуги";
+}
+
+
+.med-uslugi__services {
+  display: flex;
+  gap: 16px;
+  margin-top: 44px;
+  overflow-x: auto;
+}
+.med-uslugi__service {
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+  height: 280px;
+  padding: 32px 40px;
+  color: #FFFFFF;
+  line-height: 24px;
+
+  background-image: 
+    linear-gradient(0deg, rgba(41, 45, 58, 0.5), rgba(41, 45, 58, 0.5)),
+    linear-gradient(228.59deg, rgba(242, 101, 49, 0.4) 11.24%, rgba(0, 121, 52, 0.4) 91.81%),
+    var(--bg-image);
+  background-size: cover;
+  background-position: center;
+  border-radius: 4px;
+}
+.service-title {
+  display: flex;
+  font-size: 24px;
+  line-height: 28px;
+}
+.service-description {
+  margin-top: auto;
+  font-size: 16px;
+}
+.service-action__button  {
+  width: fit-content;
+  font-size: 13px;
+  padding: 8px 16px;
+  height: 32px;
+  margin-top: 24px;
+  border-radius: 20px;
+  background-color: #F26531;
+}
+
+
+.other-services {
+  display: flex;
+  flex-direction: column;
+}
+.other-services__title {
+  color: rgb(207, 207, 210);
+}
+
+.other-services-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.other-services-list__item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.other-services-list__free {
+  color: rgba(242, 101, 49, 1);
+  font-weight: 500;
+}
+
+.other-services-list__item:not(:last-child)::after {
+  content: "•";
+  margin-left: 12px;
+  color: rgb(234, 234, 235);
+}
+
+.other-services-list__name {
+  text-wrap: nowrap;
+  color: #292D3A;
+}
+.other-services-list__name:hover {
+  color: #131722;
+}
+.other-services-list__free {
+  text-wrap: nowrap;
+}
+.other-services-list__free:hover {
+  color: rgb(226, 85, 34);
+}
+
+.other-services__more-details {
+  margin-top: 16px;
+  font-size: 16px;
+  color: rgba(0, 121, 52, 1);
+  font-weight: 700;
+  width: fit-content;
+}
+.other-services__more-details:hover {
+  color: rgb(1, 105, 46);
+}
+.other-services__more-details::after {
+  content: 'Все медицинские услуги Гемотест (35) →';
+}
+
+
+.promo-services {}
+
+.promo-services {
+  display: flex;
+}
+.promo-services__list {
+  display: flex;
+}
+.promo-service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px;
+
+  width: 186px;
+  height: 264px;
+  overflow: hidden;
+}
+
+.promo-service:nth-child(odd) {
+  background-color: rgb(251, 247, 230);
+}
+.promo-service:nth-child(even) {
+  background-color: rgb(253, 251, 242);
+}
+.promo-service__logo {
+  width: 80px;
+  height: 80px;
+}
+
+.promo-service__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.promo-service__description-text {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.description-primary {
+  color: rgb(0, 121, 52);
+}
+
+
+@media screen and (width < 720px) {
+  .main__container {
+    margin: 24px 32px;
+  }
+
+
+  .med-uslugi__title::before {
+    content: "Мед. услуги";
+    font-size: 20px;
+  }
+  .med-uslugi__services {
+    margin-top: 28px;
+  }
+  .med-uslugi__service {
+    display: flex;
+    flex-direction: column;
+    min-width: 216px;
+    height: 240px;
+    padding: 32px 40px;
+  }
+
+  
+  .service-title {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .service-description {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .service-action__button  {
+    font-size: 12px;
+  }
+
+  
+  .other-services-list {
+    font-size: 13px;
+  }
+  .other-services-list__item:not(:last-child)::after {
+    display: none;
+  }
+  .other-services__title {
+    font-size: 10px;
+  }
+  .other-services__more-details::after {
+    font-size: 13px;
+    content: 'Все медуслуги Гемотест (35) →';
+  }
+  .other-services-list__item-short {
+    display: none;
+  }
+
+  .promo-services__list {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .promo-service {
+    flex-direction: row;
+    width: 100%;
+    height: 104px;
+    gap: 12px;
+  }
+  .promo-service__logo {
+    width: 72px;
+    height: 72px;
+  }
+  .promo-service__description {
+    flex-direction: column;
+  }
+  .promo-service__description-text {
+    font-size: 12px;
+    line-height: 20px;
+    text-align: start;
+  }
+}
